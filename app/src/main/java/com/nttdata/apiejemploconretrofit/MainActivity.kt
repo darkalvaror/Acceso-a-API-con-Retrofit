@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         getPost()
     }
 
-    //Traer los datos
+        //Traer los datos
         private fun getPost() {
 
             //Clase retrofit

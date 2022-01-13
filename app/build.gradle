@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+
+    // Plugin para dagger
+    id 'kotlin-kapt'
 }
 
 android {
@@ -38,9 +41,16 @@ android {
 
 dependencies {
 
-    //Libreria retrofit y convertidor de gson
+    // Dependencias para dagger
+    implementation 'com.google.dagger:dagger:2.40.5'
+    kapt 'com.google.dagger:dagger-compiler:2.22.1'
+
+    // Dependencias de retrofit y convertidor de gson
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    // Lottie animation
+    implementation "com.airbnb.android:lottie:3.4.0"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
