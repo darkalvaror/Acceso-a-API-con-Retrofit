@@ -60,10 +60,10 @@ class MainActivity : AppCompatActivity() {
                     //foreach para recorre las listas
                     for (post in postsList!!) {
                         var content = ""
-                        content += "userId: ${post?.getUserId().toString()}\n "
-                        content += "id: ${post?.getId().toString()}\n"
-                        content += "title: ${post?.getTitle().toString()}\n"
-                        content += "body: ${post?.getBody().toString()}\n"
+                        content += "userId: ${post?.userId.toString()}\n "
+                        content += "id: ${post?.id.toString()}\n"
+                        content += "title: ${post?.title.toString()}\n"
+                        content += "body: ${post?.body.toString()}\n"
                         content += "\n\n"
 
                         mJsonTxtView!!.append(content)
